@@ -1,3 +1,3 @@
 # Capstone_Project
 
-![Screenshot](./Media/Capstone Screenshot.png)
+![Screenshot](./Media/Capstone_Screenshot.png)
