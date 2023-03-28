@@ -39,7 +39,9 @@
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/rebuild_cache.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/edit_cache.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/test.dir
+/home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/traffic_light_client.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/traffic_light_server.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/capstone/CMakeFiles/roscpp_generate_messages_eus.dir

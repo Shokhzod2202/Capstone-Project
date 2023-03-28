@@ -147,6 +147,11 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+add_executable(traffic_light_client src/traffic_light_client.cpp)
+target_link_libraries(traffic_light_client ${catkin_LIBRARIES})
+
+add_executable(traffic_light_server src/traffic_light_server.cpp)
+target_link_libraries(traffic_light_server ${catkin_LIBRARIES})
 
 #############
 ## Install ##

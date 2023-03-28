@@ -79,7 +79,8 @@ clean: capstone/clean
 # Directory level rules for directory capstone
 
 # Recursive "all" directory target.
-capstone/all:
+capstone/all: capstone/CMakeFiles/traffic_light_client.dir/all
+capstone/all: capstone/CMakeFiles/traffic_light_server.dir/all
 
 .PHONY : capstone/all
 
@@ -89,7 +90,9 @@ capstone/preinstall:
 .PHONY : capstone/preinstall
 
 # Recursive "clean" directory target.
+capstone/clean: capstone/CMakeFiles/traffic_light_client.dir/clean
 capstone/clean: capstone/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+capstone/clean: capstone/CMakeFiles/traffic_light_server.dir/clean
 capstone/clean: capstone/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 capstone/clean: capstone/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 capstone/clean: capstone/CMakeFiles/roscpp_generate_messages_eus.dir/clean
@@ -409,6 +412,33 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
+# Target rules for target capstone/CMakeFiles/traffic_light_client.dir
+
+# All Build rule for target.
+capstone/CMakeFiles/traffic_light_client.dir/all:
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/depend
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles --progress-num=9,10 "Built target traffic_light_client"
+.PHONY : capstone/CMakeFiles/traffic_light_client.dir/all
+
+# Build rule for subdir invocation for target.
+capstone/CMakeFiles/traffic_light_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 capstone/CMakeFiles/traffic_light_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles 0
+.PHONY : capstone/CMakeFiles/traffic_light_client.dir/rule
+
+# Convenience name for target.
+traffic_light_client: capstone/CMakeFiles/traffic_light_client.dir/rule
+
+.PHONY : traffic_light_client
+
+# clean rule for target.
+capstone/CMakeFiles/traffic_light_client.dir/clean:
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/clean
+.PHONY : capstone/CMakeFiles/traffic_light_client.dir/clean
+
+#=============================================================================
 # Target rules for target capstone/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -434,6 +464,33 @@ std_msgs_generate_messages_py: capstone/CMakeFiles/std_msgs_generate_messages_py
 capstone/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f capstone/CMakeFiles/std_msgs_generate_messages_py.dir/build.make capstone/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : capstone/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target capstone/CMakeFiles/traffic_light_server.dir
+
+# All Build rule for target.
+capstone/CMakeFiles/traffic_light_server.dir/all:
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/depend
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles --progress-num=11,12 "Built target traffic_light_server"
+.PHONY : capstone/CMakeFiles/traffic_light_server.dir/all
+
+# Build rule for subdir invocation for target.
+capstone/CMakeFiles/traffic_light_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 capstone/CMakeFiles/traffic_light_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shokhzod/Documents/CapstoneProject/capstone_ws/build/CMakeFiles 0
+.PHONY : capstone/CMakeFiles/traffic_light_server.dir/rule
+
+# Convenience name for target.
+traffic_light_server: capstone/CMakeFiles/traffic_light_server.dir/rule
+
+.PHONY : traffic_light_server
+
+# clean rule for target.
+capstone/CMakeFiles/traffic_light_server.dir/clean:
+	$(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/clean
+.PHONY : capstone/CMakeFiles/traffic_light_server.dir/clean
 
 #=============================================================================
 # Target rules for target capstone/CMakeFiles/std_msgs_generate_messages_nodejs.dir

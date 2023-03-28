@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+capstone/CMakeFiles/traffic_light_client.dir/rule:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 capstone/CMakeFiles/traffic_light_client.dir/rule
+.PHONY : capstone/CMakeFiles/traffic_light_client.dir/rule
+
+# Convenience name for target.
+traffic_light_client: capstone/CMakeFiles/traffic_light_client.dir/rule
+
+.PHONY : traffic_light_client
+
+# fast build rule for target.
+traffic_light_client/fast:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/build
+.PHONY : traffic_light_client/fast
+
+# Convenience name for target.
 capstone/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 capstone/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : capstone/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -181,6 +196,21 @@ std_msgs_generate_messages_py: capstone/CMakeFiles/std_msgs_generate_messages_py
 std_msgs_generate_messages_py/fast:
 	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/std_msgs_generate_messages_py.dir/build.make capstone/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+capstone/CMakeFiles/traffic_light_server.dir/rule:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f CMakeFiles/Makefile2 capstone/CMakeFiles/traffic_light_server.dir/rule
+.PHONY : capstone/CMakeFiles/traffic_light_server.dir/rule
+
+# Convenience name for target.
+traffic_light_server: capstone/CMakeFiles/traffic_light_server.dir/rule
+
+.PHONY : traffic_light_server
+
+# fast build rule for target.
+traffic_light_server/fast:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/build
+.PHONY : traffic_light_server/fast
 
 # Convenience name for target.
 capstone/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -392,6 +422,60 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make capstone/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+src/traffic_light_client.o: src/traffic_light_client.cpp.o
+
+.PHONY : src/traffic_light_client.o
+
+# target to build an object file
+src/traffic_light_client.cpp.o:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/src/traffic_light_client.cpp.o
+.PHONY : src/traffic_light_client.cpp.o
+
+src/traffic_light_client.i: src/traffic_light_client.cpp.i
+
+.PHONY : src/traffic_light_client.i
+
+# target to preprocess a source file
+src/traffic_light_client.cpp.i:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/src/traffic_light_client.cpp.i
+.PHONY : src/traffic_light_client.cpp.i
+
+src/traffic_light_client.s: src/traffic_light_client.cpp.s
+
+.PHONY : src/traffic_light_client.s
+
+# target to generate assembly for a file
+src/traffic_light_client.cpp.s:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_client.dir/build.make capstone/CMakeFiles/traffic_light_client.dir/src/traffic_light_client.cpp.s
+.PHONY : src/traffic_light_client.cpp.s
+
+src/traffic_light_server.o: src/traffic_light_server.cpp.o
+
+.PHONY : src/traffic_light_server.o
+
+# target to build an object file
+src/traffic_light_server.cpp.o:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/src/traffic_light_server.cpp.o
+.PHONY : src/traffic_light_server.cpp.o
+
+src/traffic_light_server.i: src/traffic_light_server.cpp.i
+
+.PHONY : src/traffic_light_server.i
+
+# target to preprocess a source file
+src/traffic_light_server.cpp.i:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/src/traffic_light_server.cpp.i
+.PHONY : src/traffic_light_server.cpp.i
+
+src/traffic_light_server.s: src/traffic_light_server.cpp.s
+
+.PHONY : src/traffic_light_server.s
+
+# target to generate assembly for a file
+src/traffic_light_server.cpp.s:
+	cd /home/shokhzod/Documents/CapstoneProject/capstone_ws/build && $(MAKE) -f capstone/CMakeFiles/traffic_light_server.dir/build.make capstone/CMakeFiles/traffic_light_server.dir/src/traffic_light_server.cpp.s
+.PHONY : src/traffic_light_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,7 +486,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... traffic_light_client"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... traffic_light_server"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
@@ -420,6 +506,12 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... src/traffic_light_client.o"
+	@echo "... src/traffic_light_client.i"
+	@echo "... src/traffic_light_client.s"
+	@echo "... src/traffic_light_server.o"
+	@echo "... src/traffic_light_server.i"
+	@echo "... src/traffic_light_server.s"
 .PHONY : help
 
 

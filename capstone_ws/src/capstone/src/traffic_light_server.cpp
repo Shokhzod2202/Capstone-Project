@@ -1,33 +1,29 @@
 #include <ros/ros.h>
-#include <std_srvs/Empty.h>
+#include <std_msgs/String.h>
+#include <stdlib.h>
 
-bool getTrafficLightState(std_srvs::Empty::Request &req,
-                          std_srvs::Empty::Response &res)
+int main(int argc, char** argv)
 {
-  // Implement logic to get the traffic light state
-  bool hasCars = false; // Assume there are no cars
+    ros::init(argc, argv, "traffic_light_server");
+    ros::NodeHandle nh;
 
-  if (hasCars) {
-    ROS_INFO("Traffic light is RED");
-  } else {
-    ROS_INFO("Traffic light is GREEN");
-  }
+    ros::Publisher pub = nh.advertise<std_msgs::String>("traffic_light_state", 10);
 
-  res.success = true;
-  return true;
+    ros::Rate rate(1); // Set the loop rate in Hz
+
+    while(ros::ok())
+    {
+        // Generate a random traffic light state
+        std::string traffic_light_state = (rand() % 2 == 0) ? "red" : "green";
+
+        std_msgs::String msg;
+        msg.data = traffic_light_state;
+
+        pub.publish(msg);
+
+        ros::spinOnce();
+        rate.sleep();
+    }
+
+    return 0;
 }
-
-int main(int argc, char **argv)
-{
-  ros::init(argc, argv, "traffic_light_server");
-  ros::NodeHandle nh;
-
-  // Create a new service named "get_traffic_light_state"
-  ros::ServiceServer service = nh.advertiseService("get_traffic_light_state", getTrafficLightState);
-
-  ROS_INFO("Traffic light server is ready.");
-  ros::spin();
-
-  return 0;
-}
-
