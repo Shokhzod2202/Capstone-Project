@@ -1,0 +1,8 @@
+prefix=/home/shokhzod/Documents/CapstoneProject/capstone_ws/devel
+
+Name: capstone
+Description: Description of capstone
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
