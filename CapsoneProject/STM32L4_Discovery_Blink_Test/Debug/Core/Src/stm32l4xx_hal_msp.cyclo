@@ -1,0 +1,13 @@
+stm32l4xx_hal_msp.c:63:6:HAL_MspInit	1
+stm32l4xx_hal_msp.c:85:6:HAL_I2C_MspInit	5
+stm32l4xx_hal_msp.c:164:6:HAL_I2C_MspDeInit	3
+stm32l4xx_hal_msp.c:215:6:HAL_LCD_MspInit	3
+stm32l4xx_hal_msp.c:318:6:HAL_LCD_MspDeInit	2
+stm32l4xx_hal_msp.c:385:6:HAL_QSPI_MspInit	2
+stm32l4xx_hal_msp.c:426:6:HAL_QSPI_MspDeInit	2
+stm32l4xx_hal_msp.c:460:6:HAL_SPI_MspInit	2
+stm32l4xx_hal_msp.c:497:6:HAL_SPI_MspDeInit	2
+stm32l4xx_hal_msp.c:527:6:HAL_UART_MspInit	3
+stm32l4xx_hal_msp.c:574:6:HAL_UART_MspDeInit	2
+stm32l4xx_hal_msp.c:599:6:HAL_SAI_MspInit	5
+stm32l4xx_hal_msp.c:657:6:HAL_SAI_MspDeInit	5
